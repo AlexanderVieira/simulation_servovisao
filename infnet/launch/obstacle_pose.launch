@@ -1,0 +1,12 @@
+<launch>
+	    
+    <node name="obstacle_pose" 
+        pkg="infnet" 
+        type="obstacle_pose.py"
+        output="screen">
+
+	<remap from="goal" to="/camera/img_base"/>
+
+	</node>
+	
+</launch>
